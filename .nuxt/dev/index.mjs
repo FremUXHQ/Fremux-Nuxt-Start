@@ -2130,7 +2130,22 @@ _w3avUQwdvyzgChTcQvHK0SE54tegbl9N1SXYFO8u3c,
 _sQXbtLdg60GMjJjDOVqTvZ4p0md1E3LPN7Yyt1MFE
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1e16a-roUi8s8oHbyVGgVPSSJXFj0Y8tY\"",
+    "mtime": "2025-07-17T18:48:29.003Z",
+    "size": 123242,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"6b11b-Hl6aoeF+f2zr78iO52uQWXCpAnw\"",
+    "mtime": "2025-07-17T18:48:29.003Z",
+    "size": 438555,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -3111,7 +3126,7 @@ var contact$1 = {
 		error: "Erro ao enviar mensagem. Tente novamente."
 	},
 	info: {
-		email: "contato@fremux.dev",
+		email: "contato{'@'}fremux.com",
 		phone: "+55 (11) 99999-9999",
 		address: "São Paulo, SP - Brasil"
 	}
@@ -3217,7 +3232,7 @@ var contact = {
 		error: "Error sending message. Please try again."
 	},
 	info: {
-		email: "contact@fremux.dev",
+		email: "contact{'@'}fremux.com",
 		phone: "+55 (11) 99999-9999",
 		address: "São Paulo, SP - Brazil"
 	}

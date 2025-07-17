@@ -71,16 +71,16 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## 🔗 **Links**
 
-- **Repositório**: [FremUX-Nuxt-Starter](https://github.com/FremUXHQ/FremUX-Nuxt-Starter)
-- **Documentação**: [Docs Privados](https://github.com/FremUXHQ/FremUX-Nuxt-Starter_p)
-- **Issues**: [Relatórios de Bug & Solicitações de Funcionalidade](https://github.com/FremUXHQ/FremUX-Nuxt-Starter/issues)
-- **Discussões**: [Discussões da Comunidade](https://github.com/FremUXHQ/FremUX-Nuxt-Starter/discussions)
+- **Repositório**: [Fremux-Nuxt-Start](https://github.com/FremUXHQ/Fremux-Nuxt-Start)
+- **Documentação**: [Docs Privados](https://github.com/FremUXHQ/Fremux-Nuxt-Start_p)
+- **Issues**: [Relatórios de Bug & Solicitações de Funcionalidade](https://github.com/FremUXHQ/Fremux-Nuxt-Start/issues)
+- **Discussões**: [Discussões da Comunidade](https://github.com/FremUXHQ/Fremux-Nuxt-Start/discussions)
 
 ---
 
 ## 🤝 **Contribuindo**
 
-Contribuições são bem-vindas! Consulte nosso [Guia de Contribuição](https://github.com/FremUXHQ/FremUX-Nuxt-Starter_p/blob/main/doc/contributing.md) para detalhes.
+Contribuições são bem-vindas! Consulte nosso [Guia de Contribuição](https://github.com/FremUXHQ/Fremux-Nuxt-Start_p/blob/main/doc/contributing.md) para detalhes.
 
 ---
 
