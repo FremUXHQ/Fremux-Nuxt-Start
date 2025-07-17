@@ -15,9 +15,10 @@ Documentação sequencial e consolidada de cada passo da implementação do FREM
 | 04 | [04-correcao-testes-hibridos.md](./04-correcao-testes-hibridos.md) | Correção testes com estratégia híbrida | ✅ | fix-hybrid |
 | 05 | [05-fetch-ofetch-oficial.md](./05-fetch-ofetch-oficial.md) | Correção $fetch com ofetch oficial | ✅ | 751edfc7 |
 | 06 | [06-analise-conformidade-final.md](./06-analise-conformidade-final.md) | Análise conformidade documentação oficial | ✅ | - |
+| 07 | [07-validacao-testes-composables.md](./07-validacao-testes-composables.md) | Validação testes useHead e navigateTo | 🔄 | - |
 
 ### **Próximos Passos**:
-- [ ] 07: Validação testes useHead e navigateTo
+- [x] 07: Validação testes useHead e navigateTo (em andamento)
 - [ ] 08: Implementação testes robustos composables
 - [ ] 09: Cobertura de testes completa
 - [ ] 10: Documentação final e deploy
