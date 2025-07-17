@@ -117,14 +117,56 @@ const isSubmitting = ref(false)
 const submitMessage = ref('')
 const submitStatus = ref('')
 
+// Email validation function
+const isValidEmail = (email: string) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return emailRegex.test(email)
+}
+
 // Form submission handler
 const submitForm = async () => {
   isSubmitting.value = true
   submitMessage.value = ''
   
+  // Frontend validation
+  if (!form.name.trim()) {
+    submitMessage.value = 'Nome é obrigatório'
+    submitStatus.value = 'error'
+    isSubmitting.value = false
+    return
+  }
+  
+  if (!form.email.trim()) {
+    submitMessage.value = 'Email é obrigatório'
+    submitStatus.value = 'error'
+    isSubmitting.value = false
+    return
+  }
+  
+  if (!isValidEmail(form.email)) {
+    submitMessage.value = 'Formato de email inválido'
+    submitStatus.value = 'error'
+    isSubmitting.value = false
+    return
+  }
+  
+  if (!form.subject.trim()) {
+    submitMessage.value = 'Assunto é obrigatório'
+    submitStatus.value = 'error'
+    isSubmitting.value = false
+    return
+  }
+  
+  if (!form.message.trim()) {
+    submitMessage.value = 'Mensagem é obrigatória'
+    submitStatus.value = 'error'
+    isSubmitting.value = false
+    return
+  }
+  
   try {
     // Call real API endpoint
-    const { data } = await $fetch('/api/contact', {
+    const data = await $fetch('/api/contact', {
       method: 'POST',
       body: form
     })
@@ -134,7 +176,7 @@ const submitForm = async () => {
       form[key as keyof typeof form] = ''
     })
     
-    submitMessage.value = data.message || 'Mensagem enviada com sucesso!'
+    submitMessage.value = data?.message || 'Mensagem enviada com sucesso!'
     submitStatus.value = 'success'
     
     // Clear message after 3 seconds
