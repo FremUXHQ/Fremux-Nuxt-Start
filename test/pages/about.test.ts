@@ -44,7 +44,7 @@ describe('About Page Component', () => {
     expect(fileContent).toContain('class="container"')
     expect(fileContent).toContain('class="header"')
     expect(fileContent).toContain('class="main"')
-    expect(fileContent).toContain('Sobre o FREMUX')
+    expect(fileContent).toContain('{{ $t(\'about.title\') }}')
   })
 
   it('should have semantic HTML structure', async () => {

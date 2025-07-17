@@ -9,7 +9,7 @@ describe('Build and Performance Tests', () => {
       const packageContent = readFileSync(packagePath, 'utf-8')
       const packageJson = JSON.parse(packageContent)
       
-      expect(packageJson.name).toBe('fremux')
+      expect(packageJson.name).toBe('fremux-nuxt-starter')
       expect(packageJson.scripts).toBeDefined()
       expect(packageJson.scripts.build).toBeDefined()
       expect(packageJson.scripts.dev).toBeDefined()

@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <header class="header">
-      <h1 class="title">Contato</h1>
-      <p class="subtitle">Entre em contato conosco</p>
+      <h1 class="title">{{ $t('contact.title') }}</h1>
+      <p class="subtitle">{{ $t('contact.description') }}</p>
     </header>
 
     <main class="main">

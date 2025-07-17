@@ -2,15 +2,15 @@
   <div class="container">
     <header class="header">
       <h1 class="title">FREMUX</h1>
-      <p class="subtitle">Framework Fremux - Nuxt 4.0.0</p>
+      <p class="subtitle">{{ $t('home.subtitle') }}</p>
     </header>
 
     <main class="main">
       <section class="hero" :style="{ backgroundImage: 'url(' + heroBg + ')' }">
         <div class="hero-content">
           <img :src="logo" alt="FREMUX Logo" class="hero-logo" />
-          <h2>Bem-vindo ao FREMUX</h2>
-          <p>Framework moderno baseado em Nuxt 4.0.0 com arquitetura completa e otimizada.</p>
+          <h2>{{ $t('home.title') }}</h2>
+          <p>{{ $t('home.description') }}</p>
         </div>
       </section>
 

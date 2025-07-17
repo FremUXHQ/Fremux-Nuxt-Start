@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "home": {
+    "title": "Bem-vindo ao FREMUX",
+    "subtitle": "Framework Fremux - Nuxt 4.0.0",
+    "description": "Framework moderno baseado em Nuxt 4.0.0 com arquitetura completa e otimizada.",
+    "features": {
+      "performance": "⚡ Performance",
+      "performanceDesc": "Vite + Nitro para builds ultra-rápidos",
+      "typescript": "🎯 TypeScript",
+      "typescriptDesc": "Tipagem completa com project references",
+      "deploy": "🚀 Deploy",
+      "deployDesc": "Multiplataforma com Nitro"
+    },
+    "cta": {
+      "getStarted": "Começar Agora",
+      "learnMore": "Saiba Mais",
+      "documentation": "Documentação"
+    }
+  },
+  "about": {
+    "title": "Sobre o FREMUX",
+    "description": "FREMUX é um framework moderno e robusto baseado em Nuxt 4.0.0, desenvolvido para criar aplicações web de alta performance com as melhores práticas de desenvolvimento.",
+    "features": {
+      "title": "Características Principais",
+      "modern": "Tecnologia Moderna",
+      "modernDesc": "Baseado nas últimas versões do Nuxt, Vue 3 e TypeScript",
+      "performance": "Alta Performance",
+      "performanceDesc": "Otimizado para velocidade e eficiência",
+      "scalable": "Escalável",
+      "scalableDesc": "Arquitetura preparada para projetos de qualquer tamanho"
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Tem alguma dúvida ou sugestão? Entre em contato conosco!",
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    },
+    "info": {
+      "email": "contato@fremux.dev",
+      "phone": "+55 (11) 99999-9999",
+      "address": "São Paulo, SP - Brasil"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 FREMUX. Todos os direitos reservados.",
+    "madeWith": "Feito com",
+    "by": "por",
+    "links": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso",
+      "support": "Suporte"
+    }
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Salvar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "close": "Fechar",
+    "open": "Abrir",
+    "language": "Idioma",
+    "theme": "Tema",
+    "lightMode": "Modo Claro",
+    "darkMode": "Modo Escuro",
+    "toggleTheme": "Alternar Tema"
+  }
+}

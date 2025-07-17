@@ -32,9 +32,9 @@ describe('Navigation Integration Tests', () => {
 
     it('should have proper page titles', () => {
       const pageConfigs = [
-        { file: 'index.vue', expectedTitle: 'Home' },
-        { file: 'about.vue', expectedTitle: 'Sobre o FREMUX' },
-        { file: 'contact.vue', expectedTitle: 'Contato' }
+        { file: 'index.vue', expectedTitle: '{{ $t(\'home.title\') }}' },
+        { file: 'about.vue', expectedTitle: '{{ $t(\'about.title\') }}' },
+        { file: 'contact.vue', expectedTitle: '{{ $t(\'contact.title\') }}' }
       ]
       
       pageConfigs.forEach(({ file, expectedTitle }) => {
@@ -54,10 +54,10 @@ describe('Navigation Integration Tests', () => {
 
     it('should contain navigation links in layout', () => {
       const layoutContent = readFileSync(resolve('app/layouts/default.vue'), 'utf-8')
-      // This layout includes navigation links
-      expect(layoutContent).toContain('Home')
-      expect(layoutContent).toContain('About')
-      expect(layoutContent).toContain('Contact')
+      // This layout includes navigation links with i18n
+      expect(layoutContent).toContain('{{ $t(\'nav.home\') }}')
+      expect(layoutContent).toContain('{{ $t(\'nav.about\') }}')
+      expect(layoutContent).toContain('{{ $t(\'nav.contact\') }}')
     })
 
     it('should use NuxtLink for navigation', () => {

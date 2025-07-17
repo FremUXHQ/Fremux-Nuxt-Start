@@ -24,6 +24,9 @@ declare global {
   const defineCachedEventHandler: typeof import('../../node_modules/.pnpm/nitropack@2.12.0_@netlify+blobs@9.1.2/node_modules/nitropack/dist/runtime/internal/cache')['defineCachedEventHandler']
   const defineCachedFunction: typeof import('../../node_modules/.pnpm/nitropack@2.12.0_@netlify+blobs@9.1.2/node_modules/nitropack/dist/runtime/internal/cache')['defineCachedFunction']
   const defineEventHandler: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['defineEventHandler']
+  const defineI18nConfig: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0_@netlify+blobs@9.1.2_@vue+compiler-dom@3.5.17_db0@0.3.2_eslint@9.31_c0b946a75426581f99401d510222640c/node_modules/@nuxtjs/i18n/dist/runtime/composables/shared')['defineI18nConfig']
+  const defineI18nLocale: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0_@netlify+blobs@9.1.2_@vue+compiler-dom@3.5.17_db0@0.3.2_eslint@9.31_c0b946a75426581f99401d510222640c/node_modules/@nuxtjs/i18n/dist/runtime/composables/shared')['defineI18nLocale']
+  const defineI18nLocaleDetector: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@10.0.0_@netlify+blobs@9.1.2_@vue+compiler-dom@3.5.17_db0@0.3.2_eslint@9.31_c0b946a75426581f99401d510222640c/node_modules/@nuxtjs/i18n/dist/runtime/composables/server')['defineI18nLocaleDetector']
   const defineLazyEventHandler: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['defineLazyEventHandler']
   const defineNitroErrorHandler: typeof import('../../node_modules/.pnpm/nitropack@2.12.0_@netlify+blobs@9.1.2/node_modules/nitropack/dist/runtime/internal/error/utils')['defineNitroErrorHandler']
   const defineNitroPlugin: typeof import('../../node_modules/.pnpm/nitropack@2.12.0_@netlify+blobs@9.1.2/node_modules/nitropack/dist/runtime/internal/plugin')['defineNitroPlugin']
@@ -44,11 +47,18 @@ declare global {
   const fromPlainHandler: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['fromPlainHandler']
   const fromWebHandler: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['fromWebHandler']
   const getCookie: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getCookie']
+  const getCookieLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['getCookieLocale']
   const getHeader: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getHeader']
+  const getHeaderLanguage: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['getHeaderLanguage']
+  const getHeaderLanguages: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['getHeaderLanguages']
+  const getHeaderLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['getHeaderLocale']
+  const getHeaderLocales: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['getHeaderLocales']
   const getHeaders: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getHeaders']
   const getMethod: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getMethod']
+  const getPathLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['getPathLocale']
   const getProxyRequestHeaders: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getProxyRequestHeaders']
   const getQuery: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getQuery']
+  const getQueryLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['getQueryLocale']
   const getRequestFingerprint: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getRequestFingerprint']
   const getRequestHeader: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getRequestHeader']
   const getRequestHeaders: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['getRequestHeaders']
@@ -103,6 +113,7 @@ declare global {
   const sendWebResponse: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['sendWebResponse']
   const serveStatic: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['serveStatic']
   const setCookie: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['setCookie']
+  const setCookieLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['setCookieLocale']
   const setHeader: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['setHeader']
   const setHeaders: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['setHeaders']
   const setResponseHeader: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['setResponseHeader']
@@ -114,6 +125,11 @@ declare global {
   const toPlainHandler: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['toPlainHandler']
   const toWebHandler: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['toWebHandler']
   const toWebRequest: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['toWebRequest']
+  const tryCookieLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['tryCookieLocale']
+  const tryHeaderLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['tryHeaderLocale']
+  const tryHeaderLocales: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['tryHeaderLocales']
+  const tryPathLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['tryPathLocale']
+  const tryQueryLocale: typeof import('../../node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3')['tryQueryLocale']
   const unsealSession: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['unsealSession']
   const updateSession: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['updateSession']
   const useAppConfig: typeof import('../../node_modules/.pnpm/nitropack@2.12.0_@netlify+blobs@9.1.2/node_modules/nitropack/dist/runtime/internal/config')['useAppConfig']
@@ -123,8 +139,10 @@ declare global {
   const useRuntimeConfig: typeof import('../../node_modules/.pnpm/nitropack@2.12.0_@netlify+blobs@9.1.2/node_modules/nitropack/dist/runtime/internal/config')['useRuntimeConfig']
   const useSession: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['useSession']
   const useStorage: typeof import('../../node_modules/.pnpm/nitropack@2.12.0_@netlify+blobs@9.1.2/node_modules/nitropack/dist/runtime/internal/storage')['useStorage']
+  const useTranslation: typeof import('../../node_modules/.pnpm/@intlify+h3@0.6.1/node_modules/@intlify/h3')['useTranslation']
   const writeEarlyHints: typeof import('../../node_modules/.pnpm/h3@1.15.3/node_modules/h3')['writeEarlyHints']
 }
+export { useTranslation } from '@intlify/h3';
 export { useNitroApp } from 'nitropack/runtime/internal/app';
 export { useRuntimeConfig, useAppConfig } from 'nitropack/runtime/internal/config';
 export { defineNitroPlugin, nitroPlugin } from 'nitropack/runtime/internal/plugin';
@@ -139,3 +157,6 @@ export { defineNitroErrorHandler } from 'nitropack/runtime/internal/error/utils'
 export { appendCorsHeaders, appendCorsPreflightHeaders, appendHeader, appendHeaders, appendResponseHeader, appendResponseHeaders, assertMethod, callNodeListener, clearResponseHeaders, clearSession, createApp, createAppEventHandler, createError, createEvent, createEventStream, createRouter, defaultContentType, defineEventHandler, defineLazyEventHandler, defineNodeListener, defineNodeMiddleware, defineRequestMiddleware, defineResponseMiddleware, defineWebSocket, defineWebSocketHandler, deleteCookie, dynamicEventHandler, eventHandler, fetchWithEvent, fromNodeMiddleware, fromPlainHandler, fromWebHandler, getCookie, getHeader, getHeaders, getMethod, getProxyRequestHeaders, getQuery, getRequestFingerprint, getRequestHeader, getRequestHeaders, getRequestHost, getRequestIP, getRequestPath, getRequestProtocol, getRequestURL, getRequestWebStream, getResponseHeader, getResponseHeaders, getResponseStatus, getResponseStatusText, getRouterParam, getRouterParams, getSession, getValidatedQuery, getValidatedRouterParams, handleCacheHeaders, handleCors, isCorsOriginAllowed, isError, isEvent, isEventHandler, isMethod, isPreflightRequest, isStream, isWebResponse, lazyEventHandler, parseCookies, promisifyNodeListener, proxyRequest, readBody, readFormData, readMultipartFormData, readRawBody, readValidatedBody, removeResponseHeader, sanitizeStatusCode, sanitizeStatusMessage, sealSession, send, sendError, sendIterable, sendNoContent, sendProxy, sendRedirect, sendStream, sendWebResponse, serveStatic, setCookie, setHeader, setHeaders, setResponseHeader, setResponseHeaders, setResponseStatus, splitCookiesString, toEventHandler, toNodeListener, toPlainHandler, toWebHandler, toWebRequest, unsealSession, updateSession, useBase, useSession, writeEarlyHints } from 'h3';
 export { buildAssetsURL as __buildAssetsURL, publicAssetsURL as __publicAssetsURL } from '/home/linux_user/FREMUX/node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/core/runtime/nitro/utils/paths';
 export { defineAppConfig } from '/home/linux_user/FREMUX/node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/core/runtime/nitro/utils/config';
+export { defineI18nLocale, defineI18nConfig } from '/home/linux_user/FREMUX/node_modules/.pnpm/@nuxtjs+i18n@10.0.0_@netlify+blobs@9.1.2_@vue+compiler-dom@3.5.17_db0@0.3.2_eslint@9.31_c0b946a75426581f99401d510222640c/node_modules/@nuxtjs/i18n/dist/runtime/composables/shared';
+export { defineI18nLocaleDetector } from '/home/linux_user/FREMUX/node_modules/.pnpm/@nuxtjs+i18n@10.0.0_@netlify+blobs@9.1.2_@vue+compiler-dom@3.5.17_db0@0.3.2_eslint@9.31_c0b946a75426581f99401d510222640c/node_modules/@nuxtjs/i18n/dist/runtime/composables/server';
+export { getCookieLocale, getHeaderLanguage, getHeaderLanguages, getHeaderLocale, getHeaderLocales, getPathLocale, getQueryLocale, setCookieLocale, tryCookieLocale, tryHeaderLocale, tryHeaderLocales, tryPathLocale, tryQueryLocale } from '/home/linux_user/FREMUX/node_modules/.pnpm/@intlify+utils@0.13.0/node_modules/@intlify/utils/dist/h3';

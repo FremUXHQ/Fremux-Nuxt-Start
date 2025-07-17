@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <header class="header">
-      <h1 class="title">Sobre o FREMUX</h1>
-      <p class="subtitle">Framework Fremux - Nuxt 4.0.0</p>
+      <h1 class="title">{{ $t('about.title') }}</h1>
+      <p class="subtitle">{{ $t('about.description') }}</p>
     </header>
 
     <main class="main">

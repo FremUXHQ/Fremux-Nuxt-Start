@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "home": {
+    "title": "Bem-vindo ao FREMUX",
+    "subtitle": "Template Nuxt 4.0.0 Profissional",
+    "description": "Um template robusto e pronto para produção baseado em Nuxt 4.0.0 com TypeScript, testes automatizados e design responsivo.",
+    "features": {
+      "title": "Funcionalidades",
+      "typescript": "TypeScript completo",
+      "testing": "Testes automatizados",
+      "darkMode": "Modo escuro",
+      "responsive": "Design responsivo",
+      "seo": "SEO otimizado",
+      "i18n": "Internacionalização"
+    },
+    "cta": {
+      "getStarted": "Começar Agora",
+      "documentation": "Documentação",
+      "github": "Ver no GitHub"
+    }
+  },
+  "about": {
+    "title": "Sobre o FREMUX",
+    "description": "O FREMUX é um template profissional baseado em Nuxt 4.0.0, desenvolvido para acelerar o desenvolvimento de aplicações web modernas.",
+    "features": {
+      "title": "Por que escolher o FREMUX?",
+      "modern": "Tecnologias modernas",
+      "tested": "Totalmente testado",
+      "documented": "Bem documentado",
+      "maintained": "Mantido ativamente"
+    },
+    "tech": {
+      "title": "Stack Tecnológico",
+      "framework": "Nuxt 4.0.0",
+      "language": "TypeScript 5.0+",
+      "testing": "Vitest + Nuxt Test Utils",
+      "styling": "CSS nativo + Variáveis",
+      "tools": "ESLint + Prettier"
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Tem alguma dúvida ou sugestão? Entre em contato conosco!",
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem",
+      "submit": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar mensagem. Tente novamente."
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "github": "GitHub",
+      "email": "E-mail",
+      "website": "Website"
+    }
+  },
+  "footer": {
+    "madeWith": "Feito com",
+    "by": "pela equipe",
+    "allRightsReserved": "Todos os direitos reservados"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "close": "Fechar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "language": "Idioma",
+    "theme": "Tema",
+    "lightMode": "Modo Claro",
+    "darkMode": "Modo Escuro"
+  }
+}

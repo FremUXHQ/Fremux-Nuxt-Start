@@ -9,12 +9,13 @@
         </div>
         
         <nav class="nav">
-          <NuxtLink to="/" class="nav-link">Home</NuxtLink>
-          <NuxtLink to="/about" class="nav-link">About</NuxtLink>
-          <NuxtLink to="/contact" class="nav-link">Contact</NuxtLink>
+          <NuxtLink to="/" class="nav-link">{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink to="/about" class="nav-link">{{ $t('nav.about') }}</NuxtLink>
+          <NuxtLink to="/contact" class="nav-link">{{ $t('nav.contact') }}</NuxtLink>
         </nav>
         
         <div class="header-actions">
+          <LanguageSelector />
           <ThemeToggle />
         </div>
       </div>

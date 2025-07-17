@@ -58,7 +58,7 @@ describe('Contact Page Component', () => {
     expect(fileContent).toContain('class="container"')
     expect(fileContent).toContain('class="header"')
     expect(fileContent).toContain('class="main"')
-    expect(fileContent).toContain('Contato')
+    expect(fileContent).toContain('{{ $t(\'contact.title\') }}')
   })
 
   it('should have semantic HTML structure', async () => {
