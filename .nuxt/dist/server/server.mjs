@@ -1,0 +1,1 @@
+export { default } from "file:///home/linux_user/FREMUX/node_modules/.pnpm/@nuxt+vite-builder@4.0.0_@netlify+blobs@9.1.2_@types+node@24.0.14_eslint@9.31.0_jiti@2._ee34483db5c8c5b749e2255eea702ed1/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

@@ -1,0 +1,68 @@
+const client_manifest = {
+  "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/components/error-404.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "y2Ofawfu.js",
+    "name": "error-404",
+    "src": "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/components/error-404.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/entry.js"
+    ],
+    "css": []
+  },
+  "error-404.DcMMem57.css": {
+    "file": "error-404.DcMMem57.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/components/error-500.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DKKi1w8r.js",
+    "name": "error-500",
+    "src": "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/components/error-500.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/entry.js"
+    ],
+    "css": []
+  },
+  "error-500.DK_r5Cu2.css": {
+    "file": "error-500.DK_r5Cu2.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "Diw9N3zb.js",
+    "name": "entry",
+    "src": "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/entry.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/components/error-404.vue",
+      "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_186d2ef2f352ba47248687b4e376300b/node_modules/nuxt/dist/app/components/error-500.vue"
+    ],
+    "css": [
+      "entry.C79Od0l_.css"
+    ]
+  },
+  "entry.C79Od0l_.css": {
+    "file": "entry.C79Od0l_.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  }
+};
+
+export { client_manifest as default };
+//# sourceMappingURL=client.manifest.mjs.map
