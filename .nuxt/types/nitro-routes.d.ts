@@ -15,8 +15,14 @@ declare module "nitropack/types" {
     '/__nuxt_error': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/core/runtime/nitro/handlers/renderer').default>>>>
     }
+    '/api/_nuxt_icon/:collection': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/.pnpm/@nuxt+icon@1.15.0_magicast@0.3.5_vite@7.0.5_@types+node@24.0.14_jiti@2.4.2_terser@5.43._8d518821c698cbc6d5a489f67ebb6372/node_modules/@nuxt/icon/dist/runtime/server/api').default>>>>
+    }
     '/__nuxt_island/**': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/#internal/nuxt/island-renderer').default>>>>
+    }
+    '/_ipx/**': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/.pnpm/@nuxt+image@1.10.0_@netlify+blobs@9.1.2_db0@0.3.2_ioredis@5.6.1_magicast@0.3.5/node_modules/@nuxt/image/dist/runtime/ipx').default>>>>
     }
   }
 }

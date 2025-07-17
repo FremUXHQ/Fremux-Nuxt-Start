@@ -5,12 +5,28 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   modules: [
     '@nuxt/test-utils/module',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxt/image',
+    '@nuxt/icon'
   ],
 
   css: [
     '~/assets/css/main.css'
   ],
+
+  // Image optimization configuration
+  image: {
+    format: ['webp', 'avif', 'png', 'jpg'],
+    quality: 80,
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536
+    }
+  },
   app: {
     pageTransition: {
       name: 'page',

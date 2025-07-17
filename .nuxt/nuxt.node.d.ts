@@ -1,4 +1,6 @@
 /// <reference types="@nuxt/test-utils" />
+/// <reference types="@nuxt/image" />
+/// <reference types="@nuxt/icon" />
 /// <reference types="@nuxtjs/color-mode" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />

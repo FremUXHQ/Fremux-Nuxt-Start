@@ -36,6 +36,8 @@
     "vitest": "^3.2.4"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.15.0",
+    "@nuxt/image": "^1.10.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "vue": "^3.5.17"
   }

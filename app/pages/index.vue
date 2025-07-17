@@ -58,6 +58,69 @@
           </div>
         </div>
       </section>
+
+      <!-- Nuxt Modules Demo -->
+      <section class="modules-demo">
+        <h2>Demonstração @nuxt/image e @nuxt/icon</h2>
+        <div class="modules-grid">
+          <div class="module-item">
+            <h4>@nuxt/image - Otimização Automática</h4>
+            <NuxtImg 
+              src="/images/demo-image.svg" 
+              alt="Imagem de demonstração"
+              width="400"
+              height="200"
+              loading="lazy"
+              class="demo-image"
+            />
+            <p>Lazy loading, responsive, otimizada</p>
+          </div>
+          <div class="module-item">
+            <h4>@nuxt/icon - Ícones Dinâmicos</h4>
+            <div class="icon-showcase">
+              <ClientOnly>
+                <Icon name="heroicons:home" size="32" />
+                <Icon name="heroicons:user" size="32" />
+                <Icon name="heroicons:envelope" size="32" />
+                <Icon name="heroicons:cog-6-tooth" size="32" />
+                <Icon name="heroicons:heart" size="32" color="red" />
+                <template #fallback>
+                  <div>Carregando ícones...</div>
+                </template>
+              </ClientOnly>
+            </div>
+            <p>Ícones Heroicons integrados</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Assets Demo -->
+      <section class="assets-demo">
+        <h2>Recursos Estáticos</h2>
+        <div class="assets-grid">
+          <div class="asset-item">
+            <h4>Logo SVG</h4>
+            <img :src="logo" alt="Logo FREMUX" class="demo-logo" />
+            <code>~/assets/images/logo.svg</code>
+          </div>
+          <div class="asset-item">
+            <h4>Ícones Customizados</h4>
+            <div class="icons-row">
+              <img :src="homeIcon" alt="Home" class="icon" />
+              <img :src="userIcon" alt="User" class="icon" />
+              <img :src="mailIcon" alt="Mail" class="icon" />
+              <img :src="settingsIcon" alt="Settings" class="icon" />
+            </div>
+            <code>~/assets/images/icons/</code>
+          </div>
+          <div class="asset-item">
+            <h4>Utilitários JS</h4>
+            <p>Data formatada: {{ formattedDate }}</p>
+            <button @click="toggleDemo" class="demo-button">Testar Debounce</button>
+            <code>~/assets/js/utils.js</code>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -208,6 +271,74 @@ onMounted(() => {
 
 .footer p {
   margin: 0;
+}
+
+/* Modules Demo Section */
+.modules-demo {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.modules-demo h2 {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  transition: color var(--transition-normal);
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.module-item {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: transform var(--transition-fast), background-color var(--transition-normal);
+}
+
+.module-item:hover {
+  transform: translateY(-5px);
+}
+
+.module-item h4 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  transition: color var(--transition-normal);
+}
+
+.demo-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.icon-showcase {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.icon-showcase svg {
+  transition: transform var(--transition-fast);
+}
+
+.icon-showcase svg:hover {
+  transform: scale(1.2);
 }
 
 /* Hero section with background */
