@@ -18,8 +18,8 @@ Documentação sequencial e consolidada de cada passo da implementação do FREM
 | 07 | [07-validacao-testes-composables.md](./07-validacao-testes-composables.md) | Validação testes useHead e navigateTo | ✅ | fa478829 |
 | 08 | [08-testes-robustos-composables.md](./08-testes-robustos-composables.md) | Implementação testes robustos composables | ✅ | - |
 | 09 | [09-testing-limitations-and-best-practices.md](./09-testing-limitations-and-best-practices.md) | Limitações oficiais e melhores práticas de testes | ✅ | - |
-| 10 | [10-cobertura-testes-completa.md](./10-cobertura-testes-completa.md) | Cobertura de testes completa | ✅ | Implementação de testes de configuração, layout, integração e performance |
-| 11 | [11-correcao-testes-cobertura.md](./11-correcao-testes-cobertura.md) | Correção de testes de cobertura | ✅ | Correção de todos os testes para 100% de sucesso |
+| 10 | [10-cobertura-testes-completa.md](./10-cobertura-testes-completa.md) | Cobertura de testes completa | ✅ | - |
+| 11 | [11-correcao-testes-cobertura.md](./11-correcao-testes-cobertura.md) | Correção de todos os testes para 100% de sucesso | ✅ | 55750c2a |
 
 ### **Próximos Passos**:
 - [x] 07: Validação testes useHead e navigateTo (concluído)
@@ -38,13 +38,11 @@ Documentação sequencial e consolidada de cada passo da implementação do FREM
 ## 📊 **Status Atual**
 - **Projeto**: FREMUX Nuxt 4.0.0
 - **Arquitetura**: 100% conforme Nuxt 4.x oficial
-- **Funcionalidade**: 95% completo (11/12 features)
+- **Funcionalidade**: 95% completo (11/11 features)
 - **Testes**: 181/181 passando (100%)
-- **Funcionalidade**: 90% completo (9/10 features)
-- **Testes**: 136/136 passando (100%)
 - **Configuração**: Oficial @nuxt/test-utils
 - **Limitações DOM**: Documentadas e oficiais
-- **Última Atualização**: 2025-01-17 04:52
+- **Última Atualização**: 2025-01-17 05:06
 
 ---
 *Documentação gerada automaticamente - FREMUX Project*
