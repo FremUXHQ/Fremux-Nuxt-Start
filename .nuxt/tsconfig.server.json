@@ -47,14 +47,8 @@
       "consola": [
         "../node_modules/.pnpm/consola@3.4.2/node_modules/consola"
       ],
-      "ofetch": [
-        "../node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch"
-      ],
       "@unhead/vue": [
         "../node_modules/.pnpm/@unhead+vue@2.0.12_vue@3.5.17_typescript@5.8.3_/node_modules/@unhead/vue"
-      ],
-      "vue": [
-        "../node_modules/.pnpm/vue@3.5.17_typescript@5.8.3/node_modules/vue"
       ],
       "@vue/runtime-core": [
         "../node_modules/.pnpm/@vue+runtime-core@3.5.17/node_modules/@vue/runtime-core"
@@ -107,6 +101,7 @@
   },
   "include": [
     "./types/nitro-nuxt.d.ts",
+    "../../FREMU/runtime/server",
     "../node_modules/.pnpm/@nuxt+devtools@2.6.2_vite@7.0.5_@types+node@24.0.14_jiti@2.4.2_terser@5.43.1_yaml@2.8.0__vue@3.5.17_typescript@5.8.3_/node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/.pnpm/@nuxt+telemetry@2.6.6_magicast@0.3.5/node_modules/@nuxt/telemetry/runtime/server",
     "../shared/**/*.d.ts",
@@ -116,6 +111,7 @@
   "exclude": [
     "../node_modules",
     "../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/node_modules",
+    "../node_modules/.pnpm/@nuxt+test-utils@3.19.2_@vue+test-utils@2.4.6_happy-dom@18.0.1_jsdom@26.1.0_magicast@0._11df91def62f8f883894be4f7040603a/node_modules/@nuxt/test-utils/node_modules",
     "../node_modules/.pnpm/@nuxt+devtools@2.6.2_vite@7.0.5_@types+node@24.0.14_jiti@2.4.2_terser@5.43.1_yaml@2.8.0__vue@3.5.17_typescript@5.8.3_/node_modules/@nuxt/devtools/node_modules",
     "../node_modules/.pnpm/@nuxt+telemetry@2.6.6_magicast@0.3.5/node_modules/@nuxt/telemetry/node_modules",
     "../dist"

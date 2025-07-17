@@ -19,14 +19,8 @@
       "consola": [
         "../node_modules/.pnpm/consola@3.4.2/node_modules/consola"
       ],
-      "ofetch": [
-        "../node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch"
-      ],
       "@unhead/vue": [
         "../node_modules/.pnpm/@unhead+vue@2.0.12_vue@3.5.17_typescript@5.8.3_/node_modules/@unhead/vue"
-      ],
-      "vue": [
-        "../node_modules/.pnpm/vue@3.5.17_typescript@5.8.3/node_modules/vue"
       ],
       "@vue/runtime-core": [
         "../node_modules/.pnpm/@vue+runtime-core@3.5.17/node_modules/@vue/runtime-core"

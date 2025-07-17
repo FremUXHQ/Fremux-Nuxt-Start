@@ -1,0 +1,31 @@
+{
+  "extends": ["config:base"],
+  "schedule": ["before 4am on monday"],
+  "timezone": "America/Sao_Paulo",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["nuxt", "@nuxt/"],
+      "groupName": "nuxt packages",
+      "schedule": ["before 4am on monday"]
+    },
+    {
+      "matchPackagePatterns": ["vitest", "@vitest/"],
+      "groupName": "vitest packages"
+    },
+    {
+      "matchPackagePatterns": ["vue", "@vue/"],
+      "groupName": "vue packages"
+    },
+    {
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint packages"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 4am on monday"]
+  }
+}

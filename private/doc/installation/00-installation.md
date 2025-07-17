@@ -25,6 +25,7 @@ Documentação sequencial e consolidada de cada passo da implementação do FREM
 | 14 | [14-data-fetching-api-routes.md](./14-data-fetching-api-routes.md) | Expansão de data fetching e API routes | ⚠️ | - |
 | 15 | [15-layers-extensibilidade.md](./15-layers-extensibilidade.md) | Implementação de layers e extensibilidade | ⚠️ | - |
 | 16 | [16-deploy-producao.md](./16-deploy-producao.md) | Configuração de deploy e produção | ⚠️ | - |
+| 17 | [17-analise-deprecacoes-atualizacoes.md](./17-analise-deprecacoes-atualizacoes.md) | Análise de deprecações e atualizações | ✅ | - |
 
 ### **Próximos Passos**:
 - [x] 07: Validação testes useHead e navigateTo (concluído)
@@ -48,11 +49,12 @@ Documentação sequencial e consolidada de cada passo da implementação do FREM
 ## 📊 **Status Atual**
 - **Projeto**: FREMUX Nuxt 4.0.0
 - **Arquitetura**: 100% conforme Nuxt 4.x oficial
-- **Funcionalidade**: 69% completo (11/16 features)
+- **Funcionalidade**: 71% completo (12/17 features)
 - **Testes**: 181/181 passando (100%)
-- **Configuração**: Oficial @nuxt/test-utils
+- **Segurança**: Sem vulnerabilidades conhecidas
+- **Deprecações**: Analisadas e corrigidas
 - **Próximos Passos**: 5 features pendentes (12-16)
-- **Última Atualização**: 2025-01-17 05:10
+- **Última Atualização**: 2025-01-17 05:29
 
 ---
 *Documentação gerada automaticamente - FREMUX Project*
