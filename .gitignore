@@ -52,6 +52,10 @@ Thumbs.db
 .cache/
 .temp/
 
+# Vitest cache
+node_modules/.cache/vite/
+node_modules/.cache/vitest/
+
 # Nuxt specific
 .nuxt/
 .output/
