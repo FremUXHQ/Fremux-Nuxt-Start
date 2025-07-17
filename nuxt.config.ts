@@ -2,7 +2,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  
-  // Data de compatibilidade
-  compatibilityDate: '2025-01-17'
+  compatibilityDate: '2024-04-03',
+  css: [
+    '~/assets/css/main.css'
+  ],
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    },
+    layoutTransition: {
+      name: 'layout',
+      mode: 'out-in'
+    }
+  }
 })

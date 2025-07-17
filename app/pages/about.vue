@@ -1,0 +1,227 @@
+<template>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Sobre o FREMUX</h1>
+      <p class="subtitle">Framework Fremux - Nuxt 4.0.0</p>
+    </header>
+
+    <nav class="navigation">
+      <NuxtLink to="/" class="nav-link">Home</NuxtLink>
+      <NuxtLink to="/about" class="nav-link active">About</NuxtLink>
+      <NuxtLink to="/contact" class="nav-link">Contact</NuxtLink>
+    </nav>
+
+    <main class="main">
+      <section class="content">
+        <div class="info-grid">
+          <div class="info-card">
+            <h2>🏗️ Arquitetura</h2>
+            <ul>
+              <li><strong>Core Engine:</strong> Nuxt 4.0.0</li>
+              <li><strong>Bundler:</strong> Vite (ultra-rápido)</li>
+              <li><strong>Server:</strong> Nitro (universal)</li>
+              <li><strong>CLI:</strong> Nuxi (otimizado)</li>
+              <li><strong>DevKit:</strong> @nuxt/kit</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h2>🎯 Características</h2>
+            <ul>
+              <li>TypeScript com project references</li>
+              <li>Hot Module Replacement (HMR)</li>
+              <li>Server-Side Rendering (SSR)</li>
+              <li>Static Site Generation (SSG)</li>
+              <li>DevTools integrado</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h2>📊 Status do Projeto</h2>
+            <div class="status-item">
+              <span class="status-label">Configuration:</span>
+              <span class="status-badge complete">✅ Completo</span>
+            </div>
+            <div class="status-item">
+              <span class="status-label">Assets:</span>
+              <span class="status-badge partial">⚠️ Parcial</span>
+            </div>
+            <div class="status-item">
+              <span class="status-label">Routing:</span>
+              <span class="status-badge complete">✅ Implementando</span>
+            </div>
+            <div class="status-item">
+              <span class="status-label">Styling:</span>
+              <span class="status-badge partial">⚠️ Parcial</span>
+            </div>
+            <div class="status-item">
+              <span class="status-label">Testing:</span>
+              <span class="status-badge pending">❌ Pendente</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h2>🚀 Próximos Passos</h2>
+            <ol>
+              <li>Implementar sistema de styling completo</li>
+              <li>Configurar testing com Vitest</li>
+              <li>Criar API routes para data fetching</li>
+              <li>Implementar transitions entre páginas</li>
+              <li>Configurar layers se necessário</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 FREMUX - devLaboware</p>
+    </footer>
+  </div>
+</template>
+
+<style scoped>
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0 0;
+  opacity: 0.9;
+}
+
+.navigation {
+  background: #f8f9fa;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #e9ecef;
+  color: #667eea;
+}
+
+.nav-link.active {
+  background: #667eea;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.info-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h2 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.info-card ul, .info-card ol {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.info-card li {
+  margin-bottom: 0.5rem;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.status-label {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.complete {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status-badge.partial {
+  background: #fef5e7;
+  color: #c05621;
+}
+
+.status-badge.pending {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.footer {
+  background: #2d3748;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer p {
+  margin: 0;
+}
+</style>

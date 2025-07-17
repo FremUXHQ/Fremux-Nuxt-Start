@@ -1526,10 +1526,16 @@ async function getIslandContext(event) {
   return ctx;
 }
 
+const _lazy_wI4Ci_ = () => Promise.resolve().then(function () { return contact_post$1; });
+const _lazy_zCumkq = () => Promise.resolve().then(function () { return hello_get$1; });
+const _lazy_YSzmHM = () => Promise.resolve().then(function () { return status_get$1; });
 const _lazy_RMARRg = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '', handler: _iZMI8c, lazy: false, middleware: true, method: undefined },
+  { route: '/api/contact', handler: _lazy_wI4Ci_, lazy: true, middleware: false, method: "post" },
+  { route: '/api/hello', handler: _lazy_zCumkq, lazy: true, middleware: false, method: "get" },
+  { route: '/api/status', handler: _lazy_YSzmHM, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_RMARRg, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_RMARRg, lazy: true, middleware: false, method: undefined }
@@ -1858,6 +1864,84 @@ const styles = {};
 const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: styles
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const contact_post = defineEventHandler(async (event) => {
+  const body = await readBody(event);
+  const requiredFields = ["name", "email", "subject", "message"];
+  const missingFields = requiredFields.filter((field) => !body[field]);
+  if (missingFields.length > 0) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: `Missing required fields: ${missingFields.join(", ")}`
+    });
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(body.email)) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: "Invalid email format"
+    });
+  }
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  return {
+    success: true,
+    message: "Mensagem enviada com sucesso!",
+    data: {
+      id: Math.random().toString(36).substr(2, 9),
+      timestamp: (/* @__PURE__ */ new Date()).toISOString(),
+      name: body.name,
+      email: body.email,
+      subject: body.subject
+    }
+  };
+});
+
+const contact_post$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: contact_post
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const hello_get = defineEventHandler(async (event) => {
+  return {
+    message: "Hello from FREMUX API!",
+    timestamp: (/* @__PURE__ */ new Date()).toISOString(),
+    version: "1.0.0",
+    framework: "Nuxt 4.0.0"
+  };
+});
+
+const hello_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: hello_get
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const status_get = defineEventHandler(async (event) => {
+  const startTime = Date.now();
+  await new Promise((resolve) => setTimeout(resolve, 10));
+  const endTime = Date.now();
+  return {
+    status: "healthy",
+    uptime: process.uptime(),
+    timestamp: (/* @__PURE__ */ new Date()).toISOString(),
+    responseTime: `${endTime - startTime}ms`,
+    environment: "development",
+    version: "1.0.0",
+    framework: {
+      name: "Nuxt",
+      version: "4.0.0"
+    },
+    server: {
+      engine: "Nitro",
+      platform: process.platform,
+      nodeVersion: process.version
+    }
+  };
+});
+
+const status_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: status_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {

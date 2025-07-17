@@ -144,7 +144,6 @@
   "include": [
     "./nuxt.d.ts",
     "../app/**/*",
-    "../app.config.ts",
     "../modules/*/runtime/**/*",
     "../layers/*/app/**/*",
     "../layers/*/modules/*/runtime/**/*",
