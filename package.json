@@ -1,8 +1,33 @@
 {
-  "name": "fremux",
-  "version": "0.0.1",
-  "description": "Framework Fremux - Nuxt 4.0.0",
-  "author": "devLaboware <devops@laboware.com.br>",
+  "name": "fremux-nuxt-starter",
+  "version": "0.0.0",
+  "description": "Template profissional Nuxt 4.0.0 - Pronto para produção desde o primeiro dia",
+  "author": "FremUXHQ Team <devops@laboware.com.br>",
+  "license": "MIT",
+  "homepage": "https://github.com/FremUXHQ/FremUX-Nuxt-Starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FremUXHQ/FremUX-Nuxt-Starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FremUXHQ/FremUX-Nuxt-Starter/issues"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt4",
+    "vue",
+    "typescript",
+    "vite",
+    "starter",
+    "template",
+    "boilerplate",
+    "fremux",
+    "dark-mode",
+    "responsive",
+    "seo",
+    "vitest",
+    "testing"
+  ],
   "private": true,
   "packageManager": "pnpm@10.13.1",
   "engines": {
