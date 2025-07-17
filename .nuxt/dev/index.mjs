@@ -1756,8 +1756,20 @@ const localeCodes =  [
   "en"
 ];
 const localeLoaders = {
-  pt: [],
-  en: []
+  pt: [
+    {
+      key: "locale_pt_46json_181bce88",
+      load: () => Promise.resolve().then(function () { return pt$1; }),
+      cache: true
+    }
+  ],
+  en: [
+    {
+      key: "locale_en_46json_5e4bf6ab",
+      load: () => Promise.resolve().then(function () { return en$1; }),
+      cache: true
+    }
+  ]
 };
 const vueI18nConfigs = [];
 const normalizedLocales = [
@@ -3048,6 +3060,218 @@ const template$1 = (messages) => {
 const errorDev = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   template: template$1
+}, Symbol.toStringTag, { value: 'Module' }));
+
+var nav$1 = {
+	home: "Início",
+	about: "Sobre",
+	contact: "Contato"
+};
+var home$1 = {
+	title: "Bem-vindo ao FREMUX",
+	subtitle: "Framework Fremux - Nuxt 4.0.0",
+	description: "Framework moderno baseado em Nuxt 4.0.0 com arquitetura completa e otimizada.",
+	features: {
+		performance: "⚡ Performance",
+		performanceDesc: "Vite + Nitro para builds ultra-rápidos",
+		typescript: "🎯 TypeScript",
+		typescriptDesc: "Tipagem completa com project references",
+		deploy: "🚀 Deploy",
+		deployDesc: "Multiplataforma com Nitro"
+	},
+	cta: {
+		getStarted: "Começar Agora",
+		learnMore: "Saiba Mais",
+		documentation: "Documentação"
+	}
+};
+var about$1 = {
+	title: "Sobre o FREMUX",
+	description: "FREMUX é um framework moderno e robusto baseado em Nuxt 4.0.0, desenvolvido para criar aplicações web de alta performance com as melhores práticas de desenvolvimento.",
+	features: {
+		title: "Características Principais",
+		modern: "Tecnologia Moderna",
+		modernDesc: "Baseado nas últimas versões do Nuxt, Vue 3 e TypeScript",
+		performance: "Alta Performance",
+		performanceDesc: "Otimizado para velocidade e eficiência",
+		scalable: "Escalável",
+		scalableDesc: "Arquitetura preparada para projetos de qualquer tamanho"
+	}
+};
+var contact$1 = {
+	title: "Entre em Contato",
+	description: "Tem alguma dúvida ou sugestão? Entre em contato conosco!",
+	form: {
+		name: "Nome",
+		email: "E-mail",
+		message: "Mensagem",
+		send: "Enviar Mensagem",
+		sending: "Enviando...",
+		success: "Mensagem enviada com sucesso!",
+		error: "Erro ao enviar mensagem. Tente novamente."
+	},
+	info: {
+		email: "contato@fremux.dev",
+		phone: "+55 (11) 99999-9999",
+		address: "São Paulo, SP - Brasil"
+	}
+};
+var footer$1 = {
+	copyright: "© 2025 FREMUX. Todos os direitos reservados.",
+	madeWith: "Feito com",
+	by: "por",
+	links: {
+		privacy: "Política de Privacidade",
+		terms: "Termos de Uso",
+		support: "Suporte"
+	}
+};
+var common$1 = {
+	loading: "Carregando...",
+	error: "Erro",
+	success: "Sucesso",
+	cancel: "Cancelar",
+	confirm: "Confirmar",
+	save: "Salvar",
+	edit: "Editar",
+	"delete": "Excluir",
+	search: "Pesquisar",
+	filter: "Filtrar",
+	sort: "Ordenar",
+	next: "Próximo",
+	previous: "Anterior",
+	close: "Fechar",
+	open: "Abrir",
+	language: "Idioma",
+	theme: "Tema",
+	lightMode: "Modo Claro",
+	darkMode: "Modo Escuro",
+	toggleTheme: "Alternar Tema"
+};
+const pt = {
+	nav: nav$1,
+	home: home$1,
+	about: about$1,
+	contact: contact$1,
+	footer: footer$1,
+	common: common$1
+};
+
+const pt$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  about: about$1,
+  common: common$1,
+  contact: contact$1,
+  default: pt,
+  footer: footer$1,
+  home: home$1,
+  nav: nav$1
+}, Symbol.toStringTag, { value: 'Module' }));
+
+var nav = {
+	home: "Home",
+	about: "About",
+	contact: "Contact"
+};
+var home = {
+	title: "Welcome to FREMUX",
+	subtitle: "Fremux Framework - Nuxt 4.0.0",
+	description: "Modern framework based on Nuxt 4.0.0 with complete and optimized architecture.",
+	features: {
+		performance: "⚡ Performance",
+		performanceDesc: "Vite + Nitro for ultra-fast builds",
+		typescript: "🎯 TypeScript",
+		typescriptDesc: "Complete typing with project references",
+		deploy: "🚀 Deploy",
+		deployDesc: "Multi-platform with Nitro"
+	},
+	cta: {
+		getStarted: "Get Started",
+		learnMore: "Learn More",
+		documentation: "Documentation"
+	}
+};
+var about = {
+	title: "About FREMUX",
+	description: "FREMUX is a modern and robust framework based on Nuxt 4.0.0, developed to create high-performance web applications with the best development practices.",
+	features: {
+		title: "Key Features",
+		modern: "Modern Technology",
+		modernDesc: "Based on the latest versions of Nuxt, Vue 3 and TypeScript",
+		performance: "High Performance",
+		performanceDesc: "Optimized for speed and efficiency",
+		scalable: "Scalable",
+		scalableDesc: "Architecture prepared for projects of any size"
+	}
+};
+var contact = {
+	title: "Get in Touch",
+	description: "Have any questions or suggestions? Contact us!",
+	form: {
+		name: "Name",
+		email: "Email",
+		message: "Message",
+		send: "Send Message",
+		sending: "Sending...",
+		success: "Message sent successfully!",
+		error: "Error sending message. Please try again."
+	},
+	info: {
+		email: "contact@fremux.dev",
+		phone: "+55 (11) 99999-9999",
+		address: "São Paulo, SP - Brazil"
+	}
+};
+var footer = {
+	copyright: "© 2025 FREMUX. All rights reserved.",
+	madeWith: "Made with",
+	by: "by",
+	links: {
+		privacy: "Privacy Policy",
+		terms: "Terms of Use",
+		support: "Support"
+	}
+};
+var common = {
+	loading: "Loading...",
+	error: "Error",
+	success: "Success",
+	cancel: "Cancel",
+	confirm: "Confirm",
+	save: "Save",
+	edit: "Edit",
+	"delete": "Delete",
+	search: "Search",
+	filter: "Filter",
+	sort: "Sort",
+	next: "Next",
+	previous: "Previous",
+	close: "Close",
+	open: "Open",
+	language: "Language",
+	theme: "Theme",
+	lightMode: "Light Mode",
+	darkMode: "Dark Mode",
+	toggleTheme: "Toggle Theme"
+};
+const en = {
+	nav: nav,
+	home: home,
+	about: about,
+	contact: contact,
+	footer: footer,
+	common: common
+};
+
+const en$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  about: about,
+  common: common,
+  contact: contact,
+  default: en,
+  footer: footer,
+  home: home,
+  nav: nav
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const template = "";

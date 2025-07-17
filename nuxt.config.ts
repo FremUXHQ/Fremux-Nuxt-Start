@@ -31,24 +31,25 @@ export default defineNuxtConfig({
 
   // Internationalization configuration
   i18n: {
+    defaultLocale: 'pt',
     locales: [
       {
         code: 'pt',
-        name: 'Português'
+        name: 'Português',
+        file: 'pt.json'
       },
       {
         code: 'en',
-        name: 'English'
+        name: 'English',
+        file: 'en.json'
       }
     ],
-    defaultLocale: 'pt',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root'
-    },
-    vueI18n: './i18n.config.ts'
+    }
   },
 
   app: {
