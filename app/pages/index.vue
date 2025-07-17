@@ -6,22 +6,55 @@
     </header>
 
     <main class="main">
-      <section class="hero">
-        <h2>Bem-vindo ao FREMUX</h2>
-        <p>Framework moderno baseado em Nuxt 4.0.0 com arquitetura completa e otimizada.</p>
-        
-        <div class="features">
-          <div class="feature">
-            <h3>⚡ Performance</h3>
-            <p>Vite + Nitro para builds ultra-rápidos</p>
+      <section class="hero" :style="{ backgroundImage: 'url(' + heroBg + ')' }">
+        <div class="hero-content">
+          <img :src="logo" alt="FREMUX Logo" class="hero-logo" />
+          <h2>Bem-vindo ao FREMUX</h2>
+          <p>Framework moderno baseado em Nuxt 4.0.0 com arquitetura completa e otimizada.</p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <img :src="homeIcon" alt="Home" class="feature-icon" />
+          <h3>⚡ Performance</h3>
+          <p>Vite + Nitro para builds ultra-rápidos</p>
+        </div>
+        <div class="feature">
+          <img :src="userIcon" alt="User" class="feature-icon" />
+          <h3>🎯 TypeScript</h3>
+          <p>Tipagem completa com project references</p>
+        </div>
+        <div class="feature">
+          <img :src="settingsIcon" alt="Settings" class="feature-icon" />
+          <h3>🚀 Deploy</h3>
+          <p>Multiplataforma com Nitro</p>
+        </div>
+      </section>
+
+      <section class="assets-demo">
+        <h2>Demonstração de Assets</h2>
+        <div class="assets-grid">
+          <div class="asset-item">
+            <h4>Logo SVG</h4>
+            <img :src="logo" alt="Logo" class="demo-asset" />
+            <code>~/assets/images/logo.svg</code>
           </div>
-          <div class="feature">
-            <h3>🎯 TypeScript</h3>
-            <p>Tipagem completa com project references</p>
+          <div class="asset-item">
+            <h4>Ícones</h4>
+            <div class="icons-demo">
+              <img :src="homeIcon" alt="Home" class="demo-icon" />
+              <img :src="userIcon" alt="User" class="demo-icon" />
+              <img :src="mailIcon" alt="Mail" class="demo-icon" />
+              <img :src="settingsIcon" alt="Settings" class="demo-icon" />
+            </div>
+            <code>~/assets/images/icons/</code>
           </div>
-          <div class="feature">
-            <h3>🚀 Deploy</h3>
-            <p>Multiplataforma com Nitro</p>
+          <div class="asset-item">
+            <h4>Utilitários JS</h4>
+            <p>Data formatada: {{ formattedDate }}</p>
+            <button @click="toggleDemo" class="demo-button">Testar Debounce</button>
+            <code>~/assets/js/utils.js</code>
           </div>
         </div>
       </section>
@@ -32,6 +65,44 @@
     </footer>
   </div>
 </template>
+
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+import { formatDate, debounce } from '~/assets/js/utils.js'
+
+// Import assets
+import logo from '~/assets/images/logo.svg'
+import heroBg from '~/assets/images/hero-bg.svg'
+import homeIcon from '~/assets/images/icons/home.svg'
+import userIcon from '~/assets/images/icons/user.svg'
+import mailIcon from '~/assets/images/icons/mail.svg'
+import settingsIcon from '~/assets/images/icons/settings.svg'
+
+// Reactive data
+const demoCounter = ref(0)
+
+// Computed properties
+const formattedDate = computed(() => {
+  return formatDate(new Date())
+})
+
+// Debounced function for demo
+const debouncedIncrement = debounce(() => {
+  demoCounter.value++
+  console.log('Debounced increment:', demoCounter.value)
+}, 500)
+
+// Methods
+const toggleDemo = () => {
+  debouncedIncrement()
+}
+
+// Lifecycle
+onMounted(() => {
+  console.log('Assets demo page mounted')
+  console.log('Current date:', formattedDate.value)
+})
+</script>
 
 <style scoped>
 .container {
@@ -137,5 +208,144 @@
 
 .footer p {
   margin: 0;
+}
+
+/* Hero section with background */
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.hero h2 {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Feature icons */
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Assets demo section */
+.assets-demo {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.assets-demo h2 {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.assets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.asset-item {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.asset-item h4 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.demo-asset {
+  width: 60px;
+  height: 60px;
+  margin: 1rem 0;
+}
+
+.icons-demo {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.demo-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+}
+
+.demo-button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: background-color var(--transition-fast);
+}
+
+.demo-button:hover {
+  background: var(--primary-dark);
+}
+
+.asset-item code {
+  display: block;
+  background: var(--bg-secondary);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+.asset-item p {
+  color: var(--text-secondary);
+  margin: 0.5rem 0;
 }
 </style>
