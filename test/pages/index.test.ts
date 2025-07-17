@@ -1,20 +1,64 @@
 import { describe, it, expect } from 'vitest'
 
-describe('FREMUX Project Tests', () => {
-  it('should have basic project structure', () => {
-    expect(true).toBe(true)
+// Testes básicos sem dependência do runtime completo do Vue
+describe('Index Page Component', () => {
+  it('should have valid file structure', async () => {
+    // Testa se o arquivo existe e pode ser importado
+    const indexModule = await import('../../app/pages/index.vue')
+    expect(indexModule).toBeDefined()
+    expect(indexModule.default).toBeDefined()
   })
 
-  it('should validate core functionality', () => {
-    const projectName = 'FREMUX'
-    const framework = 'Nuxt 4.0.0'
+  it('should be a valid Vue component structure', async () => {
+    const indexModule = await import('../../app/pages/index.vue')
+    const component = indexModule.default
     
-    expect(projectName).toBe('FREMUX')
-    expect(framework).toBe('Nuxt 4.0.0')
+    // Verifica se é um objeto de componente Vue válido
+    expect(typeof component).toBe('object')
+    expect(component).toHaveProperty('__file')
   })
 
-  it('should test utility functions', () => {
-    const sum = (a: number, b: number) => a + b
-    expect(sum(2, 3)).toBe(5)
+  it('should contain expected template elements', async () => {
+    // Lê o arquivo como texto para verificar estrutura
+    const fs = await import('fs')
+    const path = await import('path')
+    const filePath = path.resolve(__dirname, '../../app/pages/index.vue')
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+    
+    // Verifica elementos essenciais no template
+    expect(fileContent).toContain('<template>')
+    expect(fileContent).toContain('class="container"')
+    expect(fileContent).toContain('class="header"')
+    expect(fileContent).toContain('class="main"')
+    expect(fileContent).toContain('class="footer"')
+    expect(fileContent).toContain('FREMUX')
+  })
+
+  it('should have navigation structure', async () => {
+    const fs = await import('fs')
+    const path = await import('path')
+    const filePath = path.resolve(__dirname, '../../app/pages/index.vue')
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+    
+    // Verifica estrutura de navegação
+    expect(fileContent).toContain('class="navigation"')
+    expect(fileContent).toContain('NuxtLink')
+    expect(fileContent).toContain('to="/"')
+    expect(fileContent).toContain('to="/about"')
+    expect(fileContent).toContain('to="/contact"')
+  })
+
+  it('should have semantic HTML structure', async () => {
+    const fs = await import('fs')
+    const path = await import('path')
+    const filePath = path.resolve(__dirname, '../../app/pages/index.vue')
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+    
+    // Verifica elementos semânticos
+    expect(fileContent).toContain('<header')
+    expect(fileContent).toContain('<main')
+    expect(fileContent).toContain('<footer')
+    expect(fileContent).toContain('<nav')
+    expect(fileContent).toContain('<section')
   })
 })
