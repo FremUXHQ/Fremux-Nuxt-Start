@@ -32,6 +32,7 @@ export default defineNuxtConfig({
   // Internationalization configuration
   i18n: {
     defaultLocale: 'pt',
+    langDir: 'locales',
     locales: [
       {
         code: 'pt',
