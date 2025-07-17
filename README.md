@@ -187,26 +187,6 @@ pnpm build       # Deve gerar build sem erros
 
 ---
 
-## 🌿 **Estrutura de Branches**
-
-Este repositório utiliza uma estrutura de branches otimizada:
-
-### 📋 **Branch `main`** (Padrão)
-- ✅ **Histórico limpo** apenas com releases taggeadas
-- ✅ **Pronto para produção** - código estável
-- ✅ **Tags semânticas** (v0.0.0, v1.0.0, etc.)
-- 🎯 **Para usuários finais** que querem usar o template
-
-### 🔧 **Branch `developer`**
-- ✅ **Histórico completo** de desenvolvimento
-- ✅ **Commits granulares** para debugging
-- ✅ **Desenvolvimento ativo** - features em progresso
-- 🎯 **Para contribuidores** que querem entender o processo
-
-> **💡 Dica**: Clone o `main` para usar o template, acompanhe o `developer` para contribuir.
-
----
-
 ## 🤝 **Contribuindo**
 
 Contribuições são bem-vindas! Consulte nosso [Guia de Contribuição](https://github.com/FremUXHQ/FremUX-Nuxt-Starter_p/blob/main/doc/contributing.md) para detalhes.
