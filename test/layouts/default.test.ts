@@ -44,11 +44,13 @@ describe('Default Layout Tests', () => {
       expect(layoutContent).toContain('/>')
     })
 
-    it('should be a minimal layout without navigation', () => {
+    it('should have navigation structure with header', () => {
       const layoutContent = readFileSync(resolve('app/layouts/default.vue'), 'utf-8')
-      // This layout is minimal and doesn't include navigation
-      expect(layoutContent).not.toContain('<nav')
-      expect(layoutContent).not.toContain('NuxtLink')
+      // This layout includes navigation and header
+      expect(layoutContent).toContain('<nav')
+      expect(layoutContent).toContain('NuxtLink')
+      expect(layoutContent).toContain('<header')
+      expect(layoutContent).toContain('ThemeToggle')
     })
   })
 

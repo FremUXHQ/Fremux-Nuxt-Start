@@ -5,12 +5,6 @@
       <p class="subtitle">Framework Fremux - Nuxt 4.0.0</p>
     </header>
 
-    <nav class="navigation">
-      <NuxtLink to="/" class="nav-link active">Home</NuxtLink>
-      <NuxtLink to="/about" class="nav-link">About</NuxtLink>
-      <NuxtLink to="/contact" class="nav-link">Contact</NuxtLink>
-    </nav>
-
     <main class="main">
       <section class="hero">
         <h2>Bem-vindo ao FREMUX</h2>
@@ -45,10 +39,13 @@
   display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 .header {
-  background: linear-gradient(135deg, #00dc82, #36e4da);
+  background: linear-gradient(135deg, var(--primary-color), #36e4da);
   color: white;
   padding: 2rem;
   text-align: center;
@@ -66,36 +63,13 @@
   opacity: 0.9;
 }
 
-.navigation {
-  background: #f8f9fa;
-  padding: 1rem 2rem;
-  display: flex;
-  gap: 2rem;
-  border-bottom: 1px solid #e9ecef;
-}
 
-.nav-link {
-  text-decoration: none;
-  color: #495057;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-  background: #e9ecef;
-  color: #00dc82;
-}
-
-.nav-link.active {
-  background: #00dc82;
-  color: white;
-}
 
 .main {
   flex: 1;
   padding: 3rem 2rem;
+  background-color: var(--bg-primary);
+  transition: background-color var(--transition-normal);
 }
 
 .hero {
@@ -106,14 +80,16 @@
 
 .hero h2 {
   font-size: 2.5rem;
-  color: #2d3748;
+  color: var(--text-primary);
   margin-bottom: 1rem;
+  transition: color var(--transition-normal);
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: var(--text-secondary);
   margin-bottom: 3rem;
+  transition: color var(--transition-normal);
 }
 
 .features {
@@ -124,33 +100,39 @@
 }
 
 .feature {
-  background: white;
+  background: var(--bg-secondary);
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), background-color var(--transition-normal), box-shadow var(--transition-normal);
+  border: 1px solid var(--border-color);
 }
 
 .feature:hover {
   transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
 
 .feature h3 {
-  color: #2d3748;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  transition: color var(--transition-normal);
 }
 
 .feature p {
-  color: #4a5568;
+  color: var(--text-secondary);
   margin: 0;
+  transition: color var(--transition-normal);
 }
 
 .footer {
-  background: #2d3748;
-  color: white;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   text-align: center;
   padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  transition: background-color var(--transition-normal), color var(--transition-normal), border-color var(--transition-normal);
 }
 
 .footer p {

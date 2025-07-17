@@ -52,17 +52,20 @@ describe('Navigation Integration Tests', () => {
       const layoutContent = readFileSync(layoutPath, 'utf-8')
     })
 
-    it('should not contain navigation in minimal layout', () => {
+    it('should contain navigation links in layout', () => {
       const layoutContent = readFileSync(resolve('app/layouts/default.vue'), 'utf-8')
-      // This is a minimal layout without navigation
-      expect(layoutContent).not.toContain('Home')
-      expect(layoutContent).not.toContain('About')
-      expect(layoutContent).not.toContain('Contact')
+      // This layout includes navigation links
+      expect(layoutContent).toContain('Home')
+      expect(layoutContent).toContain('About')
+      expect(layoutContent).toContain('Contact')
     })
 
-    it('should not use NuxtLink in minimal layout', () => {
+    it('should use NuxtLink for navigation', () => {
       const layoutContent = readFileSync(resolve('app/layouts/default.vue'), 'utf-8')
-      expect(layoutContent).not.toContain('NuxtLink')
+      expect(layoutContent).toContain('NuxtLink')
+      expect(layoutContent).toContain('to="/"')
+      expect(layoutContent).toContain('to="/about"')
+      expect(layoutContent).toContain('to="/contact"')
     })
   })
 

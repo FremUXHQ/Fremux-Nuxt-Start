@@ -97,6 +97,7 @@ declare global {
   const useAppConfig: typeof import('../../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/app/config')['useAppConfig']
   const useAsyncData: typeof import('../../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']
   const useAttrs: typeof import('vue')['useAttrs']
+  const useColorMode: typeof import('../../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.3.5/node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']
   const useCookie: typeof import('../../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/app/composables/cookie')['useCookie']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
@@ -279,6 +280,7 @@ declare module 'vue' {
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/app/config')['useAppConfig']>
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
+    readonly useColorMode: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.3.5/node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.0.0_@netlify+blobs@9.1.2_@parcel+watcher@2.5.1_@types+node@24.0.14_@vue+compiler_bc242219ce9961da023c6eebbc658c6c/node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
