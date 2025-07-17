@@ -33,8 +33,8 @@ describe('Navigation Integration Tests', () => {
     it('should have proper page titles', () => {
       const pageConfigs = [
         { file: 'index.vue', expectedTitle: 'Home' },
-        { file: 'about.vue', expectedTitle: 'About' },
-        { file: 'contact.vue', expectedTitle: 'Contact' }
+        { file: 'about.vue', expectedTitle: 'Sobre o FREMUX' },
+        { file: 'contact.vue', expectedTitle: 'Contato' }
       ]
       
       pageConfigs.forEach(({ file, expectedTitle }) => {

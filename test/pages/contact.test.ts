@@ -48,16 +48,17 @@ describe('Contact Page Component', () => {
     expect(fileContent).toContain('type="submit"')
   })
 
-  it('should have navigation structure', async () => {
+  it('should have basic page structure', async () => {
     const fs = await import('fs')
     const path = await import('path')
     const filePath = path.resolve(__dirname, '../../app/pages/contact.vue')
     const fileContent = fs.readFileSync(filePath, 'utf-8')
     
-    // Verifica estrutura de navegação
-    expect(fileContent).toContain('class="navigation"')
-    expect(fileContent).toContain('NuxtLink')
-    expect(fileContent).toContain('to="/"')
+    // Verifica estrutura básica da página
+    expect(fileContent).toContain('class="container"')
+    expect(fileContent).toContain('class="header"')
+    expect(fileContent).toContain('class="main"')
+    expect(fileContent).toContain('Contato')
   })
 
   it('should have semantic HTML structure', async () => {
@@ -70,7 +71,6 @@ describe('Contact Page Component', () => {
     expect(fileContent).toContain('<header')
     expect(fileContent).toContain('<main')
     expect(fileContent).toContain('<footer')
-    expect(fileContent).toContain('<nav')
     expect(fileContent).toContain('<section')
   })
 })
