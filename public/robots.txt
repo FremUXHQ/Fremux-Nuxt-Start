@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fremux.dev/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_nuxt/
+
+# Allow common assets
+Allow: /assets/
+Allow: /images/
+Allow: /favicon.ico
+Allow: /favicon.svg
